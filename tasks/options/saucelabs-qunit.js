@@ -18,7 +18,7 @@
         platform: "OS X 10.10",
         version: "8"
     }, {
-        browserName: "firefox",
+        browserName: "firefox", 
         platform: "Win8.1",
         version: "34"
     }, {
