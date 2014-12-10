@@ -5,8 +5,7 @@
     var config = require("../../config.js");
     var testUrls = require("./test-urls.json");
     var reportingStatus = false;
-    var browsers = [
-        /*{
+    var browsers = [{
         browserName: "internet explorer",
         platform: "WIN8.1",
         version: "11"
@@ -30,7 +29,7 @@
         browserName: "iPhone",
         platform: "OS X 10.9",
         version: "8.1"
-    },*/ {
+    }, {
         browserName: "android",
         platform: "Linux",
         version: "4.4"
