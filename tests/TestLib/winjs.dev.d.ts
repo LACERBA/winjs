@@ -155,34 +155,6 @@ declare module WinJS {
             static _RESHOW_THRESHOLD: number;
         }
         
-        interface ContentDialogHideInfo {
-            reason: string;
-        }
-        
-        interface ContentDialogHideEvent extends Event {
-            detail: ContentDialogHideInfo;
-        }
-        
-        class ContentDialog {
-            constructor(element?: HTMLElement, options?: any);
-            element: HTMLElement;
-            hidden: boolean;
-            title: string;
-            primaryCommandText: string;
-            primaryCommandDisabled: boolean;
-            secondaryCommandText: string;
-            secondaryCommandDisabled: boolean;
-            show(): Promise<ContentDialogHideInfo>;
-            hide(reason?: any): void;
-            dispose(): void;
-            addEventListener(type: string, listener: Function, useCapture?: boolean): void;
-            removeEventListener(type: string, listener: Function, useCapture?: boolean): void;
-            onbeforeshow(eventInfo: Event): void;
-            onaftershow(eventInfo: Event): void;
-            onbeforehide(eventInfo: ContentDialogHideEvent): void;
-            onafterhide(eventInfo: ContentDialogHideEvent): void;
-        }
-        
         interface IContentDialogDom {
             root: HTMLElement;
             backgroundOverlay: HTMLElement;
@@ -772,7 +744,7 @@ declare module WinJS {
         var _AppBarCommandsLayout;
 
         module XYFocus {
-            function _dFocus(direction: string, referenceRect?: IRect): void;
+            function _xyFocus(direction: string, referenceRect?: IRect): void;
         }
 
         module Pages {
